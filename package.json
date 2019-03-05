@@ -6,7 +6,7 @@
     "start":"node minserver.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --production",
-    "postinstall": "npm run build",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "express": "^4.16.4",

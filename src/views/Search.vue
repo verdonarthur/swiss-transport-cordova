@@ -1,19 +1,13 @@
 <style lang="scss">
 .autocompleteContainer {
-  position: relative;
-  height: 100%;
 }
 .searchStationInput {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
 }
 </style>
 
 
 <template>
-  <v-container class="autocompleteContainer">
+  <v-container fluid>
     <v-autocomplete
       class="searchStationInput"
       change="selectStation"
@@ -21,13 +15,14 @@
       :items="items"
       :loading="isLoading"
       :search-input.sync="search"
-      color="white"
-      hide-no-data
-      hide-selected
       item-text="name"
-      item-value="API"
-      label="Station stop"
-      placeholder="Start typing to Search"
+      item-value="id"
+      label="Search a Station"
+      cache-items
+      flat
+      hide-no-data
+      hide-details
+      solo-inverted
       return-object
     ></v-autocomplete>
   </v-container>
@@ -49,9 +44,6 @@ export default {
     },
 
     async search(val) {
-      // Items have already been loaded
-      if (this.items.length > 0) return;
-
       // Items have already been requested
       if (this.isLoading) return;
 

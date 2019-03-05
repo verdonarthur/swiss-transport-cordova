@@ -1,9 +1,20 @@
+<style scoped lang="scss">
+.cstToolbar {
+  .titleToolbar {
+    color: var(--v-secondary-base);
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 100%;
+  }
+}
+</style>
+
+
 <template>
   <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        
-      </v-toolbar-title>      
+    <v-toolbar app color="primary" class="cstToolbar">
+      <v-toolbar-title class="headline titleToolbar">{{$router.currentRoute.name}}</v-toolbar-title>
     </v-toolbar>
 
     <v-content>
@@ -32,9 +43,7 @@
 <script>
 
 export default {
-  name: 'App',
-  components: {
-  },
-  
-}
+  name: "App",
+  components: {}
+};
 </script>

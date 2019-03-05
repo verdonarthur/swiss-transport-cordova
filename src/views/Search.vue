@@ -53,7 +53,7 @@ export default {
 
       try {
         let data = await fetch(
-          "http://transport.opendata.ch/v1/locations?query=" + val
+          "https://transport.opendata.ch/v1/locations?query=" + val
         );
         data = await data.json();
 

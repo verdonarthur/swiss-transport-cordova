@@ -41,7 +41,7 @@ export default {
   async created() {
     try {
       let data = await fetch(
-        `http://transport.opendata.ch/v1/stationboard?id=${
+        `https://transport.opendata.ch/v1/stationboard?id=${
           this.$route.params.id
         }&limit=10`
       );

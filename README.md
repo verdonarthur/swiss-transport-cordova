@@ -1,7 +1,7 @@
-# swiss-transport-pwa
+# swiss-transport-cordova
 
 ## Description
-Progressive web app using the Swiss transport api (http://transport.opendata.ch/) to display stationboard around switzerland.
+Progressive web app converted in native with cordova using the Swiss transport api (http://transport.opendata.ch/) to display stationboard around switzerland.
 
 The project is develloped in vuejs.
 

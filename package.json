@@ -3,10 +3,20 @@
   "version": "0.9.0",
   "private": true,
   "scripts": {
-    "start":"node minserver.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --production",
-    "postinstall": "npm run build"
+    "cordova-build-android": "vue-cli-service cordova-build-android",
+    "cordova-build-browser": "vue-cli-service cordova-build-browser",
+    "cordova-build-ios": "vue-cli-service cordova-build-ios",
+    "cordova-build-osx": "vue-cli-service cordova-build-osx",
+    "cordova-prepare": "vue-cli-service cordova-prepare",
+    "cordova-serve-android": "vue-cli-service cordova-serve-android",
+    "cordova-serve-browser": "vue-cli-service cordova-serve-browser",
+    "cordova-serve-ios": "vue-cli-service cordova-serve-ios",
+    "cordova-serve-osx": "vue-cli-service cordova-serve-osx",
+    "build-android":"npm run build && cd ./src-cordova && cordova run android",
+    "postinstall": "npm run build",
+    "start": "node minserver.js"
   },
   "dependencies": {
     "express": "^4.16.4",
@@ -24,6 +34,7 @@
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
+    "vue-cli-plugin-cordova": "^2.1.2",
     "vue-cli-plugin-vuetify": "^0.4.6",
     "vue-template-compiler": "^2.5.21",
     "vuetify-loader": "^1.0.5"

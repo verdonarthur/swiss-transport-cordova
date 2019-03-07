@@ -1,6 +1,6 @@
 {
-  "name": "swiss-transport-pwa-withouttypescript",
-  "version": "0.1.0",
+  "name": "swiss-transport-pwa",
+  "version": "0.9.0",
   "private": true,
   "scripts": {
     "start":"node minserver.js",

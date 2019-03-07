@@ -1,4 +1,9 @@
-# swiss-transport-pwa-withouttypescript
+# swiss-transport-pwa
+
+## Description
+Progressive web app using the Swiss transport api (http://transport.opendata.ch/) to display stationboard around switzerland.
+
+The project is develloped in vuejs.
 
 ## Project setup
 ```

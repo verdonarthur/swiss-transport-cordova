@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.c24a2dfa9a4d007dbcf01a07b47b2208.js"
+  "precache-manifest.0913bbbea645369e94651c5427c5614a.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "swiss-transport-pwa"});

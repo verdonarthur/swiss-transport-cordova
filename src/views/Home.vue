@@ -35,6 +35,7 @@ export default {
 
     if (window.cordova && window.cordova.platformId != "browser") {
       console.log("Cordova is loaded", window.cordova);
+
       navigator.geolocation.getCurrentPosition(
         position => {
           x = position.coords.latitude;

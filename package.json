@@ -14,7 +14,7 @@
     "cordova-serve-browser": "vue-cli-service cordova-serve-browser",
     "cordova-serve-ios": "vue-cli-service cordova-serve-ios",
     "cordova-serve-osx": "vue-cli-service cordova-serve-osx",
-    "build-android":"npm run build && cd ./src-cordova && cordova run android",
+    "build-android":"npm run cordova-build-android && cd ./src-cordova && cordova run android",
     "postinstall": "npm run build",
     "start": "node minserver.js"
   },
